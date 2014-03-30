@@ -1,0 +1,127 @@
+body {
+  background-color: #303030;
+  background-image: url(../images/bg.jpg);
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+}
+td{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.button {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  margin-top: 0%;
+  padding: 9% 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+#have {
+  background-color: #6bbd4f;
+  margin-right: 10%;
+  float: right;
+}
+#want {
+  margin-right: 0%;
+  margin-left: 10%;
+  float: left;
+  background-color: #4183c4;
+}
+@media screen and (max-width: 767px)
+{
+  .button {
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  margin-top: 0%;
+  padding: 5% 5%;
+  border-radius: 10px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+#have {
+  background-color: #6bbd4f;
+  margin-right: 30%;
+  margin-bottom: 5%;
+}
+#want {
+    background-color: #4183c4;
+    margin-left: 30%;
+  }
+
+}
+.title {
+  margin-top: 20%;
+  margin-bottom: 10%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  font-size: 4em;
+  font-weight: 500;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 25px;
+  right: 0px;
+  bottom: 5px;
+  margin-top: 0px;
+  color: white;
+}
+.content {
+  height: 100%;
+}
