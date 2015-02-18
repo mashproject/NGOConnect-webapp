@@ -19,21 +19,21 @@
     <link rel="stylesheet" type="text/css" href="../Css/fontawesome-css-gte-4-0-0.css">
   <link rel="stylesheet" type="text/css" href="../Css/baseframe-packed.css">
   <link rel="stylesheet" type="text/css" href="../Css/css_002.css">
-   <link href="../Css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Css/jasny-bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../Css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../Css/jasny-bootstrap.min.css" >
 
     <!-- Custom styles for this template -->
     <link href="../Css/navmenu-push.css" rel="stylesheet">
  <link rel="stylesheet" type="text/css" href="../Css/css.css">
  <script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script src="./Js/analytics(1).js" async=""></script><script src="../Js/modernizr.js"></script>
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-  <!-- Feed and search -->
+  <!-- Script to add stickie -->
   <script>
 
     $(function() {
 
 
-   var people = [];
+   var ngo = [];
 
    $.getJSON('./ngo.json', function(data) {
        $.each(data.ngo, function(i, f) {
@@ -46,8 +46,7 @@
 
 });
 </script>
-  
-<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+  </head>
 <body  class="">
   <div id="root">
       <!-- headerbox -->
@@ -64,7 +63,7 @@
 
     <div class="navbar navbar-default navbar-fixed" style="background-color:turquoise">
       
-      <button type="button" class="navbar-toggle pull-right collapsed" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
         <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
       </button>
     </div>
