@@ -24,11 +24,28 @@
 
     <!-- Custom styles for this template -->
     <link href="../Css/navmenu-push.css" rel="stylesheet">
-
+ <link rel="stylesheet" type="text/css" href="../Css/css.css">
  <script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script async="" src="file://www.google-analytics.com/analytics.js"></script><script src="./Js/analytics(1).js" async=""></script><script src="../Js/modernizr.js"></script>
-  <link rel="stylesheet" type="text/css" href="../Css/css.css">
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
   <!-- Feed and search -->
-  
+  <script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('./ngo.json', function(data) {
+       $.each(data.ngo, function(i, f) {
+          var tblRow = "<li class=\"col-xs-12 col-md-3 col-sm-4\">" + "<a class=\"stickie\" href=\"\" rel=\"bookmark\">" + "<span class=\"annotation top-left\">" + f.jobLocation + "</span>" +
+           "<span class=\"annotation top-right\">" + f.lastDate + "</span>" + " <span class=\"headline\">" + f.jobDescribtion + "</span>" + " </a>"+ "</li>"
+           $(tblRow).appendTo("#stickie-area");
+     });
+
+   });
+
+});
+</script>
   
 <style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
 <body  class="">
@@ -89,23 +106,7 @@
     </a>
    </li>
 
-<li class="col-xs-12 col-md-3 col-sm-4">
-            
-    <a class="stickie" href="" rel="bookmark">
-    <span class="annotation top-left">Location</span>
-    <span class="annotation top-right">Last Date</span>
-    <span class="headline">Describtion</span>
-    </a>
-   </li>
 
-   <li class="col-xs-12 col-md-3 col-sm-4">
-            
-    <a class="stickie" href="" rel="bookmark">
-    <span class="annotation top-left">Location</span>
-    <span class="annotation top-right">Last Date</span>
-    <span class="headline">Describtion</span>
-    </a>
-   </li>
 
    </ul>
         </div>
