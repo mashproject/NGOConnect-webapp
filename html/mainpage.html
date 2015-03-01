@@ -16,6 +16,7 @@
     <link href="../Css/uikit.min.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+     
      <script src="../dropdown_files/jquery.js"></script>
         <script src="../dropdown_files/uikit.min.js"></script>
         <script src="../dropdown_files/highlight.js"></script>
@@ -119,10 +120,10 @@ id nibh ultricies vehicula ut id elit.</p>
     </div><!-- /.carousel -->
 
 
-    <div class="form-inline center-block " method="get" action="NgoConnect.html" target="NgoConnect.html" style="margin-left:20%">
-                        
+    <form class="form-inline center-block " method="get" action=".\NgoConnect.html" target="_self" style="margin-left:20%">
+                            
                             <div class="uk-button-dropdown form-group " data-uk-dropdown="">
-                                <input id="location" class="uk-button uk-button-large " style="width:300px;" value="Search Location..." disabled="true" > </input>
+                                <input id="location" class="uk-button uk-button-large " style="width:300px; color:#444;" value="Search Location..." disabled="true"> </input>
                                 <div class="uk-dropdown uk-dropdown-width uk-dropdown-up">
 
                                     <div class="uk-grid uk-dropdown-grid">
@@ -131,8 +132,8 @@ id nibh ultricies vehicula ut id elit.</p>
                                             <ul class="uk-nav uk-nav-dropdown uk-panel">
                                                 
                                                 <li class="uk-nav-header">City</li>
-                                                <li><a id="loc"  value="Delhi">Delhi</a></li>
-                                                <li><a id="loc"value="Mumbai">Mumbbai</a></li>
+                                                <li><a id="loc1"  value="Delhi">Delhi</a></li>
+                                                <li><a id="loc2"value="Mumbai">Mumbai</a></li>
                                                
                                             </ul>
 
@@ -144,40 +145,23 @@ id nibh ultricies vehicula ut id elit.</p>
                             </div>
                            
                             <div class="uk-button-dropdown form-group " data-uk-dropdown="">
-                                <button class="uk-button uk-button-large "style="width:300px;">3 Columns <i class="uk-icon-caret-down"></i></button>
-                                <div class="uk-dropdown uk-dropdown-width-3 uk-dropdown-up">
+                                <input id='cause'class="uk-button uk-button-large "style="width:300px; color:#444;" value="Cause..." disabled="true" >Cause... </input>
+                                <div class="uk-dropdown uk-dropdown-width uk-dropdown-up">
 
                                     <div class="uk-grid uk-dropdown-grid">
-                                        <div class="uk-width-1-3">
+                                        <div class="uk-width-1-1">
 
                                             <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                                <li><a href="">Item</a></li>
-                                                <li><a href="">Another item</a></li>
                                                 <li class="uk-nav-header">Header</li>
-                                                <li><a href="">Item</a></li>
-                                                <li><a href="">Another item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="">Separated item</a></li>
-                                            </ul>
-
-                                            <div class="uk-panel">Lorem ipsum dolor sit amet, consectetur <a href="">adipisicing</a> elit, sed do eiusmod tempor incididunt.</div>
-
-                                        </div>
-                                        <div class="uk-width-1-3">
-
-                                            <ul class="uk-nav uk-nav-dropdown uk-panel">
-                                                <li><a href="">Item</a></li>
-                                                <li><a href="">Another item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="">Item</a></li>
-                                                <li><a href="">Another item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="">Separated item</a></li>
+                                                <li><a id='cause1' value='Education'>Education</a></li>
+                                                <li><a id='cause2' value='Child Care'>Child Care</a></li>
+                                               
                                             </ul>
 
                                             
 
                                         </div>
+                                       
                                         
                                     </div>
 
@@ -187,7 +171,7 @@ id nibh ultricies vehicula ut id elit.</p>
                                                            <input class="uk-button uk-button-large uk-button-primary"type="submit" id="submit" value="submit" style="width:100px"></input>
                              
 
-</div>
+</form>
                             
 
 
@@ -223,6 +207,17 @@ id nibh ultricies vehicula ut id elit.</p>
     <script src="../Js/jquery.js"></script>
     <script src="../Js/bootstrap.js"></script>
     <script src="../Js/docs.js"></script>
+    <script type="text/javascript">
+$("#loc1").click(function(){
+    $("#location").attr('value',$(this).attr('value'));});
+$("#loc2").click(function(){
+    $("#location").attr('value',$(this).attr('value'));});
+$("#cause1").click(function(){
+    $("#cause").attr('value',$(this).attr('value'));});
+$("#cause2").click(function(){
+    $("#cause").attr('value',$(this).attr('value'));});
+
+</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../Js/ie10-viewport-bug-workaround.js"></script>
   
