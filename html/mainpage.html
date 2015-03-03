@@ -120,7 +120,7 @@ id nibh ultricies vehicula ut id elit.</p>
     </div><!-- /.carousel -->
 
 
-    <form class="form-inline center-block " method="get" action=".\NgoConnect.html" target="_self" style="margin-left:20%">
+    <form id='searchForm' class="form-inline center-block " method="get" target="_self" style="margin-left:20%">
                             
                             <div class="uk-button-dropdown form-group " data-uk-dropdown="">
                                 <input id="location" class="uk-button uk-button-large " style="width:300px; color:#444;" value="Search Location..." disabled="true"> </input>
@@ -216,7 +216,17 @@ $("#cause1").click(function(){
     $("#cause").attr('value',$(this).attr('value'));});
 $("#cause2").click(function(){
     $("#cause").attr('value',$(this).attr('value'));});
-
+$( "form" ).submit(function (){
+	if(($( "input:first" ).val()==='Search Location...')&&($( "input:second" ).val()==='Cause...')){
+		alert("Enter Location or Cause");
+		$('#searchForm').attr('action','');
+		return false;
+	}
+	else{
+	$('#searchForm').attr('action','.\\NgoConnect.html');
+		return true;	
+	}
+});
 </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../Js/ie10-viewport-bug-workaround.js"></script>
