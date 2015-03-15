@@ -38,7 +38,7 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -51,11 +51,8 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse pull-right">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="signin.html">Login</a></li>
-                <li><a href="#signup">Signup</a></li>
+                
+                <li><a href="#signup_login">Signup/Login</a></li>
               </div>
             </div>
           </nav>
@@ -64,7 +61,7 @@
       </div>
 
 
-    <!-- Carousel ================================================== -->
+<!-- Carousel ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom:0;">
       <!-- Indicators -->
 
@@ -115,9 +112,9 @@
 
       </div><!-- /.carousel -->
 
-
-      <form id='searchForm' class="form-inline center-block " method="get" target="_self" style="margin-top:-25%;position:absolute;margin-left:20%">
-
+<!-- form -->
+      <form id='searchForm' class="form-inline center-block " method="get" target="_self" style="margin-top:-263px;position:absolute;margin-left:20%">
+    <!-- location field -->
         <div class="uk-button-dropdown form-group " data-uk-dropdown="">
           <input id="location" class="uk-button uk-button-large " style="width:300px; color:#444;" value="Search Location..." disabled="true"> </input>
           <div class="uk-dropdown uk-dropdown-width uk-dropdown-up">
@@ -139,7 +136,7 @@
 
           </div>
         </div>
-
+<!-- cause field -->
         <div class="uk-button-dropdown form-group " data-uk-dropdown="">
           <input id='cause'class="uk-button uk-button-large "style="width:300px; color:#444;" value="Cause..." disabled="true" ></input>
           <div class="uk-dropdown uk-dropdown-width uk-dropdown-up">
@@ -169,30 +166,11 @@
 
       </form>
 
-
-
-
-
-
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <!-- /.row -->
-
-
-    </div>
-
-
     <!-- FOOTER -->
     <footer>
-
-    </footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
 
   </div><!-- /.container -->
 
@@ -203,6 +181,7 @@
     <script src="../Js/jquery.js"></script>
     <script src="../Js/bootstrap.js"></script>
     <script src="../Js/docs.js"></script>
+   <!-- script for form validation -->
    <script type="text/javascript">
     var flag1=0;
     var flag2=0;
