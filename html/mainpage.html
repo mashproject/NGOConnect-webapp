@@ -7,22 +7,19 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="http://getbootstrap.com/favicon.ico">
-<!-- <link id="data-uikit-theme" rel="stylesheet" href="http://getuikit.com/docs/css/uikit.docs.min.css">
-<link rel="stylesheet" href="http://getuikit.com/docs/css/docs.css"> -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
 <title>Carousel Template for Bootstrap</title>
 
 <!-- Bootstrap core CSS -->
-<link href="../Css/bootstrap.css" rel="stylesheet">
-<link href="../Css/uikit.min.css" rel="stylesheet">
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link href="../css/uikit.min.css" rel="stylesheet">
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
 <!-- <script src="../dropdown_files/jquery.js"></script>
-<script src="../dropdown_files/uikit.min.js"></script>
-<script src="../dropdown_files/highlight.js"></script>
-<script src="../dropdown_files/docs.js"></script> -->
-<script src="../Js/ie-emulation-modes-warning.js"></script>
-<script src="../Js/uikit.min.js"></script>
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -30,7 +27,8 @@
       <![endif]-->
 
       <!-- Custom styles for this template -->
-      <link href="../Css/carousel.css" rel="stylesheet">
+      <link href="../css/carousel.css" rel="stylesheet">
+      
     </head>
 
   <body style="padding-bottom:0;">
@@ -38,24 +36,41 @@
     <div class="navbar-wrapper">
       <div class="container">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" >Mash GLobal</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse pull-right">
-              <ul class="nav navbar-nav">
-                
-                <li><a href="#signup_login">Signup/Login</a></li>
-              </div>
-            </div>
-          </nav>
+        <!--======= Navigation bar=======-->
+<nav class="navbar navbar-lg navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigator">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand logo" href="#"><img src="#"></a>
+        <!-- <a href="#" class="navbar-icon"><i class="fa fa-3x fa-twitter"></i></a> -->
+        <!-- <a href="#" class="navbar-icon"><i class="fa fa-3x fa-dollar"></i>Donate</a> -->
+        </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navigator">
+    <ul class="nav navbar-nav navbar-right" >
+     
+     <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle" style='padding-right:50px; font-size:18px;'>Hi, Name<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+      
+<!--         <span style='font-size:25px'>Welcome, Usename<span class='glyphicon glyphicon-triangle-down'></span></span>
+ -->      
+    </ul>
+    </div>
+</nav>
 
         </div>
       </div>
@@ -113,53 +128,19 @@
       </div><!-- /.carousel -->
 
 <!-- form -->
+      
       <form id='searchForm' class="form-inline center-block " method="get" target="_self" style="margin-top:-263px;position:absolute;margin-left:20%">
     <!-- location field -->
-        <div class="uk-button-dropdown form-group " data-uk-dropdown="">
-          <input id="location" class="uk-button uk-button-large " style="width:300px; color:#444;" value="Search Location..." disabled="true"> </input>
-          <div class="uk-dropdown uk-dropdown-width uk-dropdown-up">
-
-            <div class="uk-grid uk-dropdown-grid">
-              <div class="uk-width-1-1">
-
-                <ul class="uk-nav uk-nav-dropdown uk-panel">
-
-                  <li class="uk-nav-header">City</li>
-                  <li><a id="loc1"  value="Delhi">Delhi</a></li>
-                  <li><a id="loc2"value="Mumbai">Mumbai</a></li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-          </div>
+        <div class="uk-button-dropdown form-group " >
+          <input id="location" class="uk-button uk-button-large " style="width:300px; color:#444;" Placeholder="Search Location..."> </input>
+         
         </div>
 <!-- cause field -->
-        <div class="uk-button-dropdown form-group " data-uk-dropdown="">
-          <input id='cause'class="uk-button uk-button-large "style="width:300px; color:#444;" value="Cause..." disabled="true" ></input>
-          <div class="uk-dropdown uk-dropdown-width uk-dropdown-up">
-
-            <div class="uk-grid uk-dropdown-grid">
-              <div class="uk-width-1-1">
-
-                <ul class="uk-nav uk-nav-dropdown uk-panel">
-                  <li class="uk-nav-header">Header</li>
-                  <li><a id='cause1' value='Education'>Education</a></li>
-                  <li><a id='cause2' value='Child Care'>Child Care</a></li>
-
-                </ul>
-
-
-
-              </div>
-
-
-            </div>
-
-          </div>
+        <div class="uk-button-dropdown form-group " >
+          <input id='cause'class="uk-button uk-button-large "style="width:300px; color:#444;" Placeholder="Cause..." ></input>
+          
         </div>
+      
 
         <input class="uk-button uk-button-large uk-button-primary"type="submit" id="submit" value="submit" style="width:100px"></input>
 
@@ -168,6 +149,7 @@
 
     <!-- FOOTER -->
     <footer>
+    <br><br>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
@@ -178,9 +160,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../Js/jquery.js"></script>
-    <script src="../Js/bootstrap.js"></script>
-    <script src="../Js/docs.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script type="../js/typeahead.bundle.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/docs.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
    <!-- script for form validation -->
    <script type="text/javascript">
     var flag1=0;
@@ -210,9 +194,54 @@
       }
     });
     </script>
-    
+
+<script>
+var availableTags = [
+  "ActionScript",
+  "AppleScript",
+  "Asp",
+  "BASIC",
+  "C",
+  "C++",
+  "Clojure",
+  "COBOL",
+  "ColdFusion",
+  "Erlang",
+  "Fortran",
+  "Groovy",
+  "Haskell",
+  "Java",
+  "JavaScript",
+  "Lisp",
+  "Perl",
+  "PHP",
+  "Python",
+  "Ruby",
+  "Scala",
+  "Scheme"
+];
+$( "#location" ).autocomplete({
+  source: availableTags/*,
+  minLength: 3, 
+  delay: 30*/
+}).data("ui-autocomplete")._renderItem = function( ul, item ) {
+    return $( "<li>" )
+           .append( "<a>" + item.label + "</a>" )
+           .appendTo( ul );
+};
+$( "#cause" ).autocomplete({
+  source: availableTags
+}).data("ui-autocomplete")._renderItem = function( ul, item ) {
+    return $( "<li >" )
+           .append( "<a>" + item.label + "</a>"+"<hr>" )
+           .appendTo( ul );
+};
+
+
+</script>
+   
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../Js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
 
 
-    <div data-original-title="Copy to clipboard" title="" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" class="global-zeroclipboard-container" id="global-zeroclipboard-html-bridge">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" height="100%" width="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1422996629018">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">         <embed src="../Css/ZeroClipboard.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit" height="100%" width="100%">                </object></div><svg style="visibility: hidden; position: absolute; top: -100%; left: -100%;" preserveAspectRatio="none" viewBox="0 0 500 500" height="500" width="500"><defs></defs><text style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle" y="23" x="0">500x500</text></svg></body></html>
+   </body></html>
