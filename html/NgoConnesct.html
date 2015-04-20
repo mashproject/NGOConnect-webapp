@@ -21,21 +21,12 @@
   <link rel="stylesheet" type="text/css" href="../css/css_002.css">
    <link rel="stylesheet" href="../css/bootstrap.min.css" >
     <link rel="stylesheet" href="../css/jasny-bootstrap.min.css" >
-<style type="text/css">
-  .ui-autocomplete-group {
-    line-height: 30px;
-    background-color: #aaa;
-}
-.ui-menu-item {
-    padding-left: 10px;
-}
-</style>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Custom styles for this template -->
     <link href="../css/navmenu-push.css" rel="stylesheet">
  <link rel="stylesheet" type="text/css" href="../css/css.css">
-
  <script src="../js/modernizr.js"></script>
- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
   <!-- Script to load and add stickie -->
   <script type="text/javascript" src="NgoConnect.js"></script>
   </head>
@@ -52,37 +43,31 @@
      overflow: auto;
     overflow-y: scroll;
     max-height:125px;"> 
-    <input id="tags" type="text" />
-       <input id="autocomplete" Placeholder="Locations" title="type &quot;a&quot;">
-       <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-       <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-       <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>                 
-      </ul>
-      <hr>
-      <ul id="checkCause"class="nav navmenu-nav" style="
-      padding-left:10px;padding-right:10px;
-      height:250px;
-     overflow: auto;
-    overflow-y: scroll;
-    max-height:125px;"> 
-       <h4>Cause</h4> 
-   <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-   <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-   <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-    </ul>
-    <hr>
-    <ul id="ngoName"class="nav navmenu-nav" style="
-      padding-left:10px;padding-right:10px;
-      height:200px;
-     overflow: auto;
-    overflow-y: scroll;
-    max-height:125px;"> 
-       <h4>Ngo Name</h4> 
-   <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-   <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-   <li class="active "><div class="checkbox"><label><input type="checkbox" value="">Education</label></div></li>
-    </ul>
-    <hr>
+       
+    
+    <select id="select6" name="select6" multiple>
+      <optgroup label="Group one">
+        <option value="1" >One</option>
+        <option value="2" >Two</option>
+      </optgroup>
+      <optgroup label="Group two">
+        <option value="3" >Three</option>
+        <option value="4" >Four</option>
+        <option value="5" >Five</option>
+        <option value="6" >Six</option>
+      </optgroup>
+      <optgroup label="Group three">
+        <option value="7">Seven</option>
+      </optgroup>
+      <option value="8" >Eight</option>
+      <option value="9" >Nine</option>
+      <option value="10">Ten</option>
+      <option value="11" >Eleven</option>
+      <option value="12" >Twelve</option>
+      <option value="13" >Thirteen</option>
+      <option value="14" >Fourteen</option>
+    </select>
+
     </div>
 
 <!-- NAVBAR ================================================== -->
@@ -102,7 +87,7 @@
       <!-- menu button to show/ hide the off canvas slider -->
         
       <div class="navbar-collapse collapse">
-       <form class="navbar-form navbar-right pull-right" role="search">
+       <form class="navbar-form navbar-right pull-right" role="search" method="get" target="_self" action="./NgoConnect.html">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Ngo Search">
         </div>
@@ -132,9 +117,6 @@
   
   <ul id="stickie-area" class="row">
 
-
-
-
    </ul>
         </div>
       <!-- /container -->
@@ -161,20 +143,31 @@
       
         <div class="container" id="main-content">
 
+  
+    
+      
+  <!-- Included JS Files -->
+  <!--[if lt IE 9]>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      if (typeof jQuery === 'undefined')
+        document.write('<script type="text/javascript" src="https://static.hasjob.co/_baseframe/js/jquery-1.11.2.min.js"><\/script>');
+    </script>
+  <![endif]-->
+  <!--[if gte IE 9]><!-->
    <script src="../js/jquery-1.10.2.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="../js/jquery-autosize-js-jquery-sparkline-js-jquery-liblink-js-jque.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="../js/jasny-bootstrap.min.js"></script>
     <script src="../js/offcanvas.js"></script>
+    <script src="../js/jquery.js"></script>
     <script type="text/javascript">
       if (typeof jQuery === 'undefined')
         document.write('<script type="text/javascript" src="https://static.hasjob.co/_baseframe/js/jquery-2.1.3.min.js"><\/script>');
-    </script>g
-
+    </script>
   <!--<![endif]-->
     <script type="text/javascript" src="../js/baseframe-bs3-js.js"></script>
-   
+    <script type="text/javascript" src="../js/jquery-autosize-js-jquery-sparkline-js-jquery-liblink-js-jque.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script>
 var availableTags = [
   "ActionScript",
@@ -202,9 +195,11 @@ var availableTags = [
 ];
 $( "#autocomplete" ).autocomplete({
   source: availableTags,
-   multiselect: true,
   appendTo: $("#checkLocation").next()
 });
+
+
+
 </script>
 
 

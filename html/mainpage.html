@@ -56,13 +56,13 @@
     <ul class="nav navbar-nav navbar-right" >
      
      <li class="dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle" style='padding-right:50px; font-size:18px;'>Hi, Name<b class="caret"></b></a>
+                <a href="./ProfilePage.html" data-toggle="dropdown" class="dropdown-toggle" style='padding-right:50px; font-size:18px;'>Hi, Name<b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">My Account</a></li>
+                    <li><a href="./ProfilePage.html">My Account</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="#">Offers</a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="./signin.html">Logout</a></li>
                 </ul>
             </li>
       
@@ -122,7 +122,7 @@
     </header>
 <!-- form -->
       
-      <form id='searchForm' class="form-inline center-block " method="get" target="_self" style="margin-top:-263px;position:absolute;margin-left:20%">
+      <form id='searchForm' class="form-inline center-block " method="get" target="_self" style="margin-top:-263px;position:absolute;margin-left:20%" action="./NgoConnect.html">
     <!-- location field -->
         <div class="uk-button-dropdown form-group " >
           <input id="location" class="uk-button uk-button-large " style="width:300px; color:#444;" Placeholder="Search Location..."> </input>
@@ -133,8 +133,7 @@
           <input id='cause'class="uk-button uk-button-large "style="width:300px; color:#444;" Placeholder="Cause..." ></input>
           
         </div>
-      n
-
+  
         <input class="uk-button uk-button-large uk-button-primary"type="submit" id="submit" value="submit" style="width:100px"></input>
 
 
@@ -154,12 +153,13 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/jquery.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="../js/typeahead.bundle.js"></script>
     <script src="../js/bootstrap.js"></script>
     <script src="../js/docs.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
    <!-- script for form validation -->
-   <script type="text/javascript">
+<!--   <script type="text/javascript">
     var flag1=0;
     var flag2=0;
       $("#loc1").click(function(){
@@ -186,7 +186,7 @@
         return false;	
       }
     });
-    </script>
+    </script> -->
 
 <script>
 var availableTags = [
@@ -221,7 +221,7 @@ $( "#location" ).autocomplete({
     return $( "<li>" )
            .append( "<a>" + item.label + "</a>" )
            .appendTo( ul );
-};
+}
 $( "#cause" ).autocomplete({
   source: availableTags
 }).data("ui-autocomplete")._renderItem = function( ul, item ) {
@@ -237,9 +237,5 @@ $( "#cause" ).autocomplete({
         interval: 5000 //changes the speed
     })
     </script>
-   
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../js/ie10-viewport-bug-workaround.js"></script>
-
 
    </body></html>
