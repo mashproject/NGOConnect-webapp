@@ -1,0 +1,1 @@
+$(function(){var e=function(){$("#stickie-area").on("click","li.grouped",function(e){e.preventDefault();var i=$(this);$($.map(i.children(),function(e){return"<li class='col-xs-12 col-md-3 col-sm-4 animated shake'><a class='stickie' href="+$(e).data("href")+" rel='bookmark'>"+$(e).html()+"</a>                </li>"}).join("")).insertBefore(i),$(i).remove()})};e()});

@@ -1,0 +1,32 @@
+{
+   "ngo": [
+       {
+           "Name": "Clark",
+           "jobLocation": "Delhi",
+           "jobCause": "Education",
+           "jobDescribtion": "Reporter",
+           "lastDate": 20
+       },
+       {
+           "Name": "Clark",
+           "jobLocation": "Delhi",
+           "jobCause": "Education",
+           "jobDescribtion": "Reporter",
+           "lastDate": 20
+       },
+       {
+           "Name": "Clark",
+           "jobLocation": "Delhi",
+           "jobCause": "Education",
+           "jobDescribtion": "Reporter",
+           "lastDate": 20
+       },
+       {
+           "Name": "Clark",
+           "jobLocation": "Delhi",
+           "jobCause": "Education",
+           "jobDescribtion": "Reporter",
+           "lastDate": 20
+       }
+   ]
+}

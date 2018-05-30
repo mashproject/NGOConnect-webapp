@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOugdm0LZdjqr5-oayXSOefg.woff2) format('woff2'), url(https://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Fira Sans Italic'), local('FiraSans-Italic'), url(https://fonts.gstatic.com/s/firasans/v5/QURAmFz4b80g324-oF-Uj44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'), url(https://fonts.gstatic.com/s/firasans/v5/QURAmFz4b80g324-oF-Uj4bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Fira Sans Bold Italic'), local('FiraSans-BoldItalic'), url(https://fonts.gstatic.com/s/firasans/v5/6s0YCA9oCTF6hM60YM-qTYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2'), url(https://fonts.gstatic.com/s/firasans/v5/6s0YCA9oCTF6hM60YM-qTTqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'McLaren';
+  font-style: normal;
+  font-weight: 400;
+  src: local('McLaren'), local('McLaren-Regular'), url(https://fonts.gstatic.com/s/mclaren/v4/kwCEtQyC8wAaIWU-tJRZ8w.woff2) format('woff2'), url(https://fonts.gstatic.com/s/mclaren/v4/h-YmANpv0wVrTiywvwSdPg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Walter Turncoat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Walter Turncoat'), local('WalterTurncoat'), url(https://fonts.gstatic.com/s/walterturncoat/v6/sG9su5g4GXy1KP73cU3hvbescDKuDVIm01MBkTErNGM.woff2) format('woff2'), url(https://fonts.gstatic.com/s/walterturncoat/v6/sG9su5g4GXy1KP73cU3hvf-Xg5uhy57aq-Akr_1zBcg.woff) format('woff');
+}

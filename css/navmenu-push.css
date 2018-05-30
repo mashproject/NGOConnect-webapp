@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+}
+body {
+  padding-left:0;
+}
+
+.navbar-toggle {
+  float: right;
+  margin-left: 0;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    border: none;
+  }
+}
